@@ -112,8 +112,8 @@
   How do we start the communication between prover and verifier? \pause
 
   \begin{itemize}
-    \item On input <$\phi$>, the prover sends a value c>0 to the verifier and tries to convince that c is the arithmetic value of $\phi$ \newline (Remember : the verifier can not calculate its value by itself because it could be double exponential) \pause
-    \item Problem : the value could be exponential but the verifier has only have polynomial time \pause
+    \item On input <$\phi$>, the prove sends a value c>0 to the verifier and tries to convince that c is the arithmetic value of $\phi$ \newline (Remember : the verifier can not calculate its value by itself because it could be double exponential) \pause
+    \item Problem : the value could be exponential but the verifier has only polynomial time \pause
   \end{itemize}
 
   $\phi = \forall x_1 ... \forall x_m \exists y \exists z. (y \lor z)$. What is $\phi_{arith}$? We caluclate it step by step. \pause
@@ -128,8 +128,25 @@
 \begin{frame}
   \frametitle{Protocol-Problem}
   \begin{itemize}
-    \item Pick 
+    \item Pick a value $k \geq 2^n$ with two conditions : 
+    \item k must be presentable in linear many bits \pause
+    \item the calculation mod k must preserve ">0" for valid and "=0" for invalid formulas
+    \item Number Theory Theorem : for any $a \leq 2^{2^{n}}, a>0$, there exist a prime number $k \in [2^n, 2^{3n}]$ s.t $a \not\equiv 0 $ (mod k)
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Protocol continued}
+  \begin{itemize}
+    \item Prover sends value c, prime number k and a proof b for the prime number property (it is possible to give a polynomial proof) \pause
+    \item Verifier check c>0, $k \in [2^n, 2^{3n}]$ and b is a correct proof for prime property 
+  \end{itemize}
+  Even if k and b are correct, the verifier stays sceptical about c. \pause
+
+  \begin{itemize}
+    \item 
+  \end{itemize}
+  
 \end{frame}
 
 
