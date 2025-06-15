@@ -1,0 +1,138 @@
+\documentclass[hyperref={pdfpagelabels=false},t,10pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[default,scale=.95]{opensans}
+
+
+\usetheme[cd2018]{tud}
+\setbeamercolor{normal text}{fg=black}
+\colorlet{alert}{cdblue}
+\setbeamercolor{alerted text}{fg=cdblue}
+\setbeamerfont{frametitle}{size=\Large,family=\sffamily,series=\sbseries}
+
+
+\DeclareRobustCommand\sbseries{\fontseries{sb}\selectfont}
+\DeclareTextFontCommand{\textsb}{\sbseries}
+
+
+\title{IP = PSPACE}
+\author[© author]{hello}
+\institute{Technische Universit\"at Dresden}
+\datecity{CONFERENCE}
+\date{DATE}
+
+
+\begin{document}
+
+%%%% Uncomment the following line to set background image to main slide
+%%%% (parameter sets transparency)
+%\setbeamertemplate{tud background}[image/shaded]{background.jpg}{0.5}
+\addtocounter{framenumber}{-1}
+\maketitle
+
+\begin{frame}
+  \frametitle{PSPACE $\subseteq$ IP}
+  For this inclusion, we use a well known PSPACE-complete problem, namely True-QBF
+  \pause
+  \begin{itemize}
+  \item QBF-Truth is the set of all valid quantified boolean formulas without free variables and for any variable p we have $p\in \{0,1\}$
+  \pause
+  \item $\forall x \exists y \, (x \lor y)$, $\exists x \exists y \neg(x \land y)$
+  \pause
+  \item $\mbox{QBF-Truth}_{NNF}$ (abbrev. with QBF') is QBF-Truth but negations are only applied on variables
+  \item $\exists x \exists y \neg(x\land y)$ is not in NNF but $\exists x \exists y (\neg x \lor \neg y)$
+  \pause
+  \item $\mbox{QBF} \leq^P_m \mbox{QBF-Truth}_{NNF}$ can be easily done by the verifier 
+  \item it suffices to show QBF' $\in$ IP because we can reduce any problem in PSPACE to QBF in polynomial time \newline \newline
+  How do we find an algorithm for QBF' s.t it satisfies the IP conditions?
+
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Arithmetization}
+  The prover has to convince the verifier that the formula is valid but in case of 
+  an invalid formula it should reject with high probability (for all prover) \newline \pause
+
+  \begin{itemize}
+    \item The idea is to arithmetize the formula \pause
+    \item $x \land y$ becomes x*y
+    \item $x \lor y$ becomes x+y - x*y
+    \item $\neg x$ becomes 1-x \pause
+  \end{itemize}
+    \begin{tabular}{|c|c|c|c|c|}
+      \hline
+      x & y & $x\land y = x*y$& $x\land y = x+y - x*y $ &$\neg (x\land y) = 1- (x * y)$ \\ 
+      \hline
+      0 & 0 & 0 & 0 & 1\\ 
+      0 & 1 & 0 & 1 & 1\\
+      1 & 0 & 0 & 1 & 1\\
+      1 & 1 & 1 & 1 & 0\\ 
+    \end{tabular}
+    $$\phi(x_1,x_2,...,x_n) = 1 \Leftrightarrow \phi_{arith}(x_1,x_2,...,x_n) = 1$$
+\end{frame}
+
+\begin{frame}
+  \frametitle{Arithmetization}
+  How do we arithmetize $\forall$ and $\exists$ ?  \newline
+  \pause 
+
+  \begin{itemize}
+    \item $\forall x \, \phi$ becomes $a_0 * a_1$ where $a_0 = \phi[x := 0]$ and $a_1 = \phi[x := 1]$ 
+    \pause
+    \item $\exists x \, \phi$ becomes $a_0 + a_1$ where $a_0 = \phi[x := 0]$ and $a_1 = \phi[x := 1]$  
+    \pause
+  \end{itemize}
+  Example : $\phi = \forall x \exists y \, \neg (x \land y)$ \newline \pause 
+  Arithmetize : $\neg (x \land y) \, \xrightarrow{arith.} 1-(x * y) \xrightarrow{\exists arith.} \sum_{y \in \{0,1\}}^{} 1-(x*y) \xrightarrow{\forall arith.}$ \pause \newline 
+  $\prod_{x \in \{0,1\}}^{} \sum_{y \in \{0,1\}} 1- (x*y) = \phi_{arith}$ \newline
+
+  \begin{itemize}
+    \item $\phi_{arith} = 2$ \pause
+    \item If $\phi$ is true then $\phi_{arith} > 0$
+    \item If $\phi$ is false then $\phi_{arith} = 0$ \pause
+    \item This can be shown by structural induction 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Arithmetization}
+  \begin{itemize}
+    \item $\phi = x$. If $\phi$ is true then $\phi_{arith} = 1$ and if $\phi $ is true then $\phi_{arith} = 0$
+    \item $\phi = \neg x$ is the same but turned around \pause
+    \item Suppose $\phi_1$ and $\phi_2$ are true, that means $\phi_{1arith} > 0$ and $\phi_{2arith} > 0$ \newline(it's similar for the other case)\pause
+    \item $\phi_1 \land \phi_2$, $\phi_1 \lor \phi_2$ also holds
+    \item For $\forall \, \phi_1$, we have by induction that $\phi_1[x := 0], \phi_1[x := 1]$ is true, so the multiplication of two positive value is positive (same for $\exists \phi_1$)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Protocol-Problem}
+  How do we start the communication between prover and verifier? \pause
+
+  \begin{itemize}
+    \item On input <$\phi$>, the prover sends a value c>0 to the verifier and tries to convince that c is the arithmetic value of $\phi$ \newline (Remember : the verifier can not calculate its value by itself because it could be double exponential) \pause
+    \item Problem : the value could be exponential but the verifier has only have polynomial time \pause
+  \end{itemize}
+
+  $\phi = \forall x_1 ... \forall x_m \exists y \exists z. (y \lor z)$. What is $\phi_{arith}$? We caluclate it step by step. \pause
+  Let $\phi' = \exists y \exists z (y \lor z)$. Then $\phi'_{arith} = \sum_{y \{0,1\}}^{} \sum_{z \{0,1\}^{}} y + z - y*z = 3$ \pause
+  $\phi_{arith} = \prod_{x_1 \in \{0,1\}}^{}... \prod_{x_m \in \{0,1\}}^{} \phi'_{arith} = 3^{2^{m}}$ \newline
+  \begin{itemize}
+    \item It holds that for formula $\phi$ with string length n : $\phi_{arith} \leq 2^{2^{n}}$
+    \item  We solve this problem by using modulo with a suitable value
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Protocol-Problem}
+  \begin{itemize}
+    \item Pick 
+  \end{itemize}
+\end{frame}
+
+
+
+
+\end{document}
