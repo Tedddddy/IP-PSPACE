@@ -58,19 +58,19 @@
   \begin{itemize}
     \item The idea is to arithmetize the formula \pause
     \item $x \land y$ becomes x*y
-    \item $x \lor y$ becomes x+y - x*y
+    \item $x \lor y$ becomes x+y
     \item $\neg x$ becomes 1-x \pause
   \end{itemize}
     \begin{tabular}{|c|c|c|c|c|}
       \hline
-      x & y & $x\land y = x*y$& $x\land y = x+y - x*y $ &$\neg (x\land y) = 1- (x * y)$ \\ 
+      x & y & $x\land y = x*y$& $x\land y = x+y $ &$\neg (x\land y) = 1- (x * y)$ \\ 
       \hline
       0 & 0 & 0 & 0 & 1\\ 
       0 & 1 & 0 & 1 & 1\\
       1 & 0 & 0 & 1 & 1\\
-      1 & 1 & 1 & 1 & 0\\ 
+      1 & 1 & 1 & 2 & 0\\ 
     \end{tabular}
-    $$\phi(x_1,x_2,...,x_n) = 1 \Leftrightarrow \phi_{arith}(x_1,x_2,...,x_n) = 1$$
+    $$\phi(x_1,x_2,...,x_n) = 1 \Leftrightarrow \phi_{arith}(x_1,x_2,...,x_n) > 0$$
 \end{frame}
 
 \begin{frame}
@@ -144,7 +144,11 @@
   Even if k and b are correct, the verifier stays sceptical about c. \pause
 
   \begin{itemize}
-    \item 
+    \item If $\phi = \phi_1 \land \phi_2 $, then ask prover to send $a_1$ and $a_2$ and check $c = a_1 * a_2$. If it's true then ask the prover to prove that the of $\phi_1$ is $a_1$ and $\phi_2$ is $a_2$
+    \item For $\phi = \phi_1 \lor \phi_2$, we ask for $a_1$ and $a_2$ s.t c = $a_1 + a_2$ \pause
+    \item In case $\phi = \forall x \phi_1$ we asked for a polynomial p(x) that represents the arithmetic presentation of $\phi_1$ where x is free and we check c = p(0) * p(1)
+    \item If it is true, the verifier sends randomly a number d between $\{0,..., k-1\} = GF(K)$ and caluclate p(d). Now the verifier expects the prover to prove the value of $\phi_1[x := d]$ is p(d)
+    \item The same process happens when we have $\phi = \exists \phi_1$, but we check $c = p(0) + p(1)$
   \end{itemize}
   
 \end{frame}
