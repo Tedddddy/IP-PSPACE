@@ -3,6 +3,8 @@
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc}
 \usepackage[default,scale=.95]{opensans}
+\usepackage{tikz}
+
 
 
 \usetheme[cd2018]{tud}
@@ -117,8 +119,8 @@
   \end{itemize}
 
   $\phi = \forall x_1 ... \forall x_m \exists y \exists z. (y \lor z)$. What is $\phi_{arith}$? We caluclate it step by step. \pause
-  Let $\phi' = \exists y \exists z (y \lor z)$. Then $\phi'_{arith} = \sum_{y \{0,1\}}^{} \sum_{z \{0,1\}^{}} y + z - y*z = 3$ \pause
-  $\phi_{arith} = \prod_{x_1 \in \{0,1\}}^{}... \prod_{x_m \in \{0,1\}}^{} \phi'_{arith} = 3^{2^{m}}$ \newline
+  Let $\phi' = \exists y \exists z (y \lor z)$. Then $\phi'_{arith} = \sum_{y \{0,1\}}^{} \sum_{z \{0,1\}^{}} y + z = 4$ \pause
+  $\phi_{arith} = \prod_{x_1 \in \{0,1\}}^{}... \prod_{x_m \in \{0,1\}}^{} \phi'_{arith} = 4^{2^{m}}$ \newline
   \begin{itemize}
     \item It holds that for formula $\phi$ with string length n : $\phi_{arith} \leq 2^{2^{n}}$
     \item  We solve this problem by using modulo with a suitable value
@@ -153,6 +155,42 @@
   
 \end{frame}
 
+\begin{frame}
+\frametitle{Protocol continue}
+\begin{itemize}
+  \item When every variable got a number in GF(K), say $y_1, ..., y_n$ the verifier calculates $\phi_{arith}(y_1,...,y_n)$ and accept if its equal to $q(y_1,...,y_n)$ (last polynomial sent by prover) else reject
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Example}
+  $\phi = \forall x \exists y (\neg x \lor y) \land \exists z \exists g \, (z \lor g) $ \newline \newline
+  $\phi_{arith} = \underbrace{(\prod_{x}^{} \prod_{y}^{} (1-x) + y )}_{\phi_1} * \underbrace{(\sum_{z}^{} \sum_{g}^{} z + g)}_{\phi_2}$ \, \,   $x,y,z,g \in \{0,1\}$ \pause
+  \newline
+  %\hspace*{1.3cm} Prover \hspace{6.8cm} Verifier \newline \newline
+  \hspace*{0cm}
+  \begin{tikzpicture}
+    \node at (-2,0.5) {Prover};
+    \node at (8,0.5) {Verifier};
+  \draw[->] (0,0) -- (6,0) node[midway, above] {c=8,k=11,b};
+  \node[text width=5cm, align=left] at (9,0) {check c>0, 8, b}; \pause
+  \draw[<-] (0,-1) -- (6,-1) node[midway, above] {asks for $a_1 = \phi_1 \mbox{ and } a_2 = \phi_2$};
+  \draw[->] (0,-2) -- (6,-2) node[midway, above] {sends $a_1 = 2$, $a_2 = 4$};
+  \node[text width=5cm, align=left] at (9,-2) {check $c = a_1 * a_2$};
+  \draw[<-] (0,-3) -- (6,-3) node[midway, above] {prove $a_1 = \phi_1, a_2 =\phi_2$}; \pause
+    \draw[<-] (0,-3) -- (6,-3) node[midway, below] {send me $p_1(x)$ for $\phi_1$ and $p_2(x)$ for $\phi_2$};
+  \end{tikzpicture}
+
+\end{frame}
+
+\begin{frame}
+  \frametitle{Example continue}
+  \begin{tikzpicture}
+    \node at (-2,0.5) {Prover};
+    \node at (8,0.5) {Verifier};
+  \end{tikzpicture}
+\end{frame}
 
 
 
