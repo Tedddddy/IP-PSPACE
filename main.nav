@@ -24,9 +24,11 @@
 \headcommand {\beamer@framepages {44}{49}}
 \headcommand {\slideentry {0}{0}{13}{50/50}{}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\beamer@partpages {1}{50}}
-\headcommand {\beamer@subsectionpages {1}{50}}
-\headcommand {\beamer@sectionpages {1}{50}}
-\headcommand {\beamer@documentpages {50}}
-\headcommand {\gdef \inserttotalframenumber {12}}
-\headcommand {\tudbeamersetpagenumberwidths {12}{51}}
+\headcommand {\slideentry {0}{0}{14}{51/54}{}{0}}
+\headcommand {\beamer@framepages {51}{54}}
+\headcommand {\beamer@partpages {1}{54}}
+\headcommand {\beamer@subsectionpages {1}{54}}
+\headcommand {\beamer@sectionpages {1}{54}}
+\headcommand {\beamer@documentpages {54}}
+\headcommand {\gdef \inserttotalframenumber {13}}
+\headcommand {\tudbeamersetpagenumberwidths {13}{55}}

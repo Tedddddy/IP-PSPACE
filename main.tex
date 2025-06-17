@@ -241,13 +241,19 @@
 
 \begin{frame}
   \frametitle{Simple QBF}
-  \begin{tikzpicture}
-    \node at (-2,-0.5) {Prover};
-    \node at (8,-0.5) {Verifier};
-     \node[text width=5cm, align=left] at (9,-1) {\scriptsize chooses g = 4};
-     \draw[<-] (0,-1.3) -- (6,-1.3) node[midway, above] {sends $p'_1(d,g)$};
-  \end{tikzpicture}
-
 \end{frame}
 
+
+\begin{frame}
+  \frametitle{Correctness}
+  \begin{itemize}
+    \item If $\phi$ is true, a truthful Prover can ensure that V accepts \pause
+    \item If $\phi$ is false, the chance that V accepts is very small \pause
+    \item We use "Schwartz-Zippel" lemma. Let p be a non-zero multivariate polynomial $p(x_1,...,x_m)$ with degree $\leq d$ and S a finite set of integers.
+    If $a_1,..., a_m$ a chosen randomly independently and uniformly from S, then $$Pr[p(a_1,...,a_m)= 0] \leq \frac{d}{|S|}$$
+    \item Prover sends wrong polynomial $p \neq h =\phi_{arith}$. Verifier chooses randomly $c\in GF(p)$ where $p\geq 2^n$. Furthermore we have $deg(g-h) \leq 2n$. \pause
+    Then $Pr[p(c) = h(c)] = Pr[p(c) - h(c) = 0] \leq \frac{2n}{2^n}$.
+    \item 
+  \end{itemize}
+\end{frame}
 \end{document}
