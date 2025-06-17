@@ -165,8 +165,8 @@
 
 \begin{frame}
   \frametitle{Example}
-  $\phi = \forall x \exists y (\neg x \lor y) \land \exists z \exists g \, (z \lor g) $ \newline \newline
-  $\phi_{arith} = \underbrace{(\prod_{x}^{} \prod_{y}^{} (1-x) + y )}_{\phi_1} * \underbrace{(\sum_{z}^{} \sum_{g}^{} z + g)}_{\phi_2}$ \, \,   $x,y,z,g \in \{0,1\}$ \pause
+  $\phi = \forall x \exists y (\neg x \lor y) \land \exists z \exists w \, (z \lor w) $ \newline \newline
+  $\phi_{arith} = \underbrace{(\prod_{x}^{} \prod_{y}^{} (1-x) + y )}_{\phi_{1arith}} * \underbrace{(\sum_{z}^{} \sum_{w}^{} z + w)}_{\phi_{2arith}}$ \, \,   $x,y,z,w \in \{0,1\}$ \pause
   \newline
   %\hspace*{1.3cm} Prover \hspace{6.8cm} Verifier \newline \newline
   \hspace*{0cm}
@@ -185,13 +185,69 @@
 \end{frame}
 
 \begin{frame}
+   \hspace*{0cm}
   \frametitle{Example continue}
   \begin{tikzpicture}
     \node at (-2,0.5) {Prover};
     \node at (8,0.5) {Verifier};
-  \end{tikzpicture}
+    \node[text width=1.5cm, align=left] at (-2,-0.5) {\small calculate $\phi_{1arith}(x)$, $\phi_{2arith}(z)$}; 
+    \draw[->] (0,-0.5) -- (6,-0.5) node[midway, above] {\small sends $p_1(x) = \phi_{1arith}(x)$, $\phi_{2arith}(z)$};
+    \draw[->] (0,-0.5) -- (6,-0.5) node[midway, below] {\small $p_1(x) = \prod_{y}^{}(1-x)+y = x^2-3x+2$};
+    \node[text width=3.5cm, align=left] at (8,-0.5) {\scriptsize check $a_1=p_1(0)*p_1(1)$};
+    \node[text width=3.5cm, align=left] at (8,-0.9) {\scriptsize check $a_2=p_2(0)+p_2(1)$}; \pause 
+
+    \node[text width=3.5cm, align=left] at (8,-2.5) {\scriptsize Choose randomly $d,g \in GF(k)$,say d=2,g=3};
+    \draw[<-] (0,-2.5) -- (6,-2.5) node[midway, above] {\small sends $p_1(d) = 0, p_2(g) = 7$};
+    \draw[<-] (0,-2.5) -- (6,-2.5) node[midway, below] {\small ask for $p'_1(d,y), p'_2(g,w) $}; \pause
+    \draw[->] (0,-4.5) -- (6,-4.5) node[midway, above] {\small sends $p'_1(d,y) = \phi_{1arith}(d,y)$};
+    \draw[->] (0,-4.5) -- (6,-4.5) node[midway, below] {\small sends $p'_2(g,w) = \phi_{2arith}(g,w)$};
+    \node[text width=3.5cm, align=left] at (8,-4.5) {\scriptsize $p'_1(d,0)*p'_1(d,1)=p_1(d)$};  
+    \node[text width=3.5cm, align=left] at (8,-4.9) {\scriptsize $p'_2(g,0)*p'_2(g,1)=p_2(g)$}; 
+    \node[text width=3.5cm, align=left] at (8,-5.3) {\scriptsize Choose c,k $\in$ GF(k)}; \pause
+  \end{tikzpicture} 
+  \pause
+    \only<5->{ % Replace 5 with the slide number where it should appear
+    \vspace{0.5cm}
+    \text{The verifier check $\phi_{arith}(d,c,g,k) = p'_1(d,c) * p'_2(g,k)$. It accepts.}
+  }
 \end{frame}
 
+\begin{frame}
+  \hspace*{0cm}
+  \frametitle{Next Example}
+  $\phi = \forall x \exists y \,x \land y  \xrightarrow{arith.} \phi_{arith} = \prod_{x}^{} \sum_{y}^{} x*y$ \pause \newline \newline
+  Prover can not tell the truth because the verifier would reject instantly.
+  \begin{tikzpicture}
+    \node at (-2,-0.5) {Prover};
+    \node at (8,-0.5) {Verifier}; \pause  
+    \draw[->] (0,-0.5) -- (6,-0.5) node[midway, above] {c= 3, p = 131, b};
+    \node[text width=5cm, align=left] at (9,-1) {\small check c>0, 131, b};
+    \draw[<-] (0,-1.5) -- (6,-1.5) node[midway, above] {asks for $p_1(x)$}; \pause
+    \draw[->] (0,-2.5) -- (6,-2.5) node[midway, above] {sends $p_1(x) = 2x + x$};
+    \draw[->] (0,-2.5) -- (6,-2.5) node[midway, below] {\small prover has to lie};
+    \node[text width=5cm, align=left] at (9,-2.5) {\scriptsize check $p_1(0) * p_1(1) = c$}; \pause
+    \node[text width=5cm, align=left] at (9,-3) {\scriptsize choose $d\in GF(p)$};
+    \draw[<-] (0,-3.5) -- (6,-3.5) node[midway, above] {\small sends $p_1(d)$};
+    \draw[<-] (0,-3.5) -- (6,-3.5) node[midway, below] {\scriptsize If $\phi_{arith}(d)= p_1(d=3) = 7$ then we lost. Chances should be low}; \pause
+    \draw[->] (0,-4.5) -- (6,-4.5) node[midway, above] {\small sends $p'_1(d,y) = 7*y$};
+    \node[text width=3.5cm, align=left] at (8,-4.5) {\scriptsize check $p'_1(d,0) + p'_1(d,1) = p_1(d)$. Chooses g = 4};
+  \end{tikzpicture}
+  \only<5->{ % Replace 5 with the slide number where it should appear
+    \vspace{0.5cm}
+    \text{The verifier check $\phi_{arith}(d,g) = p'_1(d,g)$. $12\neq 28$. Verfier rejects.}
+  } 
 
+\end{frame}
+
+\begin{frame}
+  \frametitle{Simple QBF}
+  \begin{tikzpicture}
+    \node at (-2,-0.5) {Prover};
+    \node at (8,-0.5) {Verifier};
+     \node[text width=5cm, align=left] at (9,-1) {\scriptsize chooses g = 4};
+     \draw[<-] (0,-1.3) -- (6,-1.3) node[midway, above] {sends $p'_1(d,g)$};
+  \end{tikzpicture}
+
+\end{frame}
 
 \end{document}
