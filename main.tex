@@ -243,8 +243,9 @@
   \frametitle{Simple QBF}
 \begin{itemize}
   \item Problem : Polynomial could be exponential. The verifier can not verfying it in polynomial time. \pause
-  \item Example : $\phi = \forall x_1, ... , \forall x_m (x_1 \lor ... \lor x_m) \xrightarrow{arith \phi(x_1)} \phi_{arith}(x) = \prod_{x_2}^{} ...\prod{x_m} \, (x_1 +x_2+ ...+ x_m) \rightarrow deg(\phi_{arith}(x) \leq 2^{m-1}$ 
-  \item 
+  \item Example : $\phi = \forall x_1, ... , \forall x_m (x_1 \lor ... \lor x_m) \xrightarrow{arith \phi(x_1)} \phi_{arith}(x) = \prod_{x_2}^{} ...\prod_{x_m}^{}\, (x_1 +x_2+ ...+ x_m) \rightarrow deg(\phi_{arith}(x)) \leq 2^{m-1}$ \pause
+  \item A QBF $\phi$ is called simple, if any occurence of a variable is seperated by at most one universal quantifier from its point of quantification.
+  \item Example : $\forall x_1 \forall x_2 \exists x_3$ $[(x_1 \lor x_2) \land \forall x_4 (x_2 \lor x_3 \lor x_4)]$
 \end{itemize}
 \end{frame}
 

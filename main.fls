@@ -1728,6 +1728,9 @@ INPUT ./TU_Logo_SW.pdf
 INPUT ./TU_Logo_SW.pdf
 INPUT TU_Logo_SW.pdf
 INPUT ./TU_Logo_SW.pdf
+INPUT ./TU_Logo_SW.pdf
+INPUT TU_Logo_SW.pdf
+INPUT ./TU_Logo_SW.pdf
 OUTPUT main.nav
 OUTPUT main.toc
 OUTPUT main.snm
