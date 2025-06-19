@@ -246,6 +246,10 @@
   \item Example : $\phi = \forall x_1, ... , \forall x_m (x_1 \lor ... \lor x_m) \xrightarrow{arith \phi(x_1)} \phi_{arith}(x) = \prod_{x_2}^{} ...\prod_{x_m}^{}\, (x_1 +x_2+ ...+ x_m) \rightarrow deg(\phi_{arith}(x)) \leq 2^{m-1}$ \pause
   \item A QBF $\phi$ is called simple, if any occurence of a variable is seperated by at most one universal quantifier from its point of quantification.
   \item Example : $\forall x_1 \forall x_2 \exists x_3$ $[(x_1 \lor x_2) \land \forall x_4 (x_2 \lor x_3 \lor x_4)]$
+  \item Counterexample : $\forall x_1 \forall x_2 [(x_1 \lor x_2) \land \forall x_3 (\neg x_1 \lor x_3)]$ \pause
+  \item We can reduce any QBF formula into a Simple QBF in polynomial time
+  \item Let $\phi = ... Qx_i...\forall x_j \psi(x_i)$ where $Q \in \{\forall, \exists\}$ and $\forall x_j$ is the first universal quantifier after $Q_{xi}$. We transform $\phi$ as follows :
+  $$\phi' = ... Qx_i ... \forall x_j\exists x_i' (x_i \leftrightarrow x_i') \land \psi(x_i')$$
 \end{itemize}
 \end{frame}
 
@@ -253,12 +257,30 @@
 \begin{frame}
   \frametitle{Correctness}
   \begin{itemize}
+    \item Example : $\exists x (\forall y \forall z (x \lor (y \lor z))) \land (\forall u (u \lor x))$
+    \item Reduced : $\exists x (\forall y \exists x'  (x \leftrightarrow x') \land \forall z(x' \lor (y \lor z))) \land (\forall u (u \lor x))$
+    \item If $\phi$ is a simple QBF formula of length n,and p(x) be a polynomial of $\phi_{arith}$. Then $deg(p(x) \leq 2^n)$. This can be shown by induction. \pause
+  \end{itemize}
+  Now we check for the correctness of the protocol
+
+  \begin{itemize}
     \item If $\phi$ is true, a truthful Prover can ensure that V accepts \pause
     \item If $\phi$ is false, the chance that V accepts is very small \pause
     \item We use "Schwartz-Zippel" lemma. Let p be a non-zero multivariate polynomial $p(x_1,...,x_m)$ with degree $\leq d$ and S a finite set of integers.
-    If $a_1,..., a_m$ a chosen randomly independently and uniformly from S, then $$Pr[p(a_1,...,a_m)= 0] \leq \frac{d}{|S|}$$
-    \item Prover sends wrong polynomial $p \neq h =\phi_{arith}$. Verifier chooses randomly $c\in GF(p)$ where $p\geq 2^n$. Furthermore we have $deg(g-h) \leq 2n$. \pause
-    Then $Pr[p(c) = h(c)] = Pr[p(c) - h(c) = 0] \leq \frac{2n}{2^n}$.
+    If $a_1,..., a_m$ a chosen randomly independently and uniformly from S, then $$Pr[p(a_1,...,a_m)= 0] \leq \frac{d}{|S|}$$ \pause
+    \item Prover sends wrong polynomial $p \neq h =\phi_{arith}$ in the i-th round. Verifier chooses randomly $c\in GF(p)$ where $p\geq 2^n$. Furthermore we have $deg(g-h) \leq 2n$.
+    Then $Pr[p(c) = h(c)] = \mbox{Pr[Error i-th round]} \leq \frac{2n}{2^n}$.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Correctness continue}
+  \begin{itemize}
+    \item That means Pr[No Error in i-th round]$\geq 1- \frac{2n}{2^n}$
+    \item Because random number are chosen independently, and after $m \leq n$ rounds, we have : 
+    $$Pr[Error] = 1 - Pr[\mbox{No Error}] = 1- \prod_{i=1}^{m} Pr[\mbox{No Error in i-th round}]$$
+    $$ \leq (1-(1-\frac{2n}{2^n}))^n$$ \newline
+    \item  The last approximation is true because : $\prod_{i=1}^{m} Pr[\mbox{no error in i-th round}] \geq (1-\frac{2n}{2^n})^m \geq (1- \frac{2n}{2^n})^n$
     \item 
   \end{itemize}
 \end{frame}
