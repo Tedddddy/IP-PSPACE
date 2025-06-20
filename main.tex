@@ -37,7 +37,6 @@
   \frametitle{Content}
   \begin{itemize}
     \item What is IP?
-    \item Short idea for $PSPACE \in IP$
     \item Arithmetization
     \item Introducing the protocol 
     \item Problems within the protocol and solutions
@@ -52,7 +51,8 @@
     \item A prover tries to convince the Verifier of membership
     \item Verifier scpetically checks the Prover's arguemnts before making a decision
     \item The interaction might involve several rounds of communication
-    \item The prover might have unlimited power but the verifier operate in p
+    \item The prover might have unlimited power but the verifier operate in P
+    \item The message length and number of rounds should be polynomial \pause
     \item A language L is in IP if there is a polynomial verifier V such that, for every word w : 
     $$\mbox{if w } \in \mbox{L then there is a Prover P with }Pr[V \leftrightarrow P accepts] \geq \frac{2}{3}$$
     $$\mbox{if w } \notin \mbox{L then for all  Prover P with }Pr[V \leftrightarrow P accepts] \leq \frac{1}{3}$$
@@ -65,14 +65,14 @@
   For this inclusion, we use a well known PSPACE-complete problem, namely True-QBF
   \pause
   \begin{itemize}
-  \item QBF-Truth is the set of all valid quantified boolean formulas without free variables and for any variable p we have $p\in \{0,1\}$
+  \item QBF-Truth (abbrev. with QBF) is the set of all valid quantified boolean formulas without free variables and for any variable p we have $p\in \{0,1\}$
   \pause
   \item $\forall x \exists y \, (x \lor y)$, $\exists x \exists y \neg(x \land y)$
   \pause
   \item $\mbox{QBF-Truth}_{NNF}$ (abbrev. with QBF') is QBF-Truth but negations are only applied on variables
   \item $\exists x \exists y \neg(x\land y)$ is not in NNF but $\exists x \exists y (\neg x \lor \neg y)$
   \pause
-  \item $\mbox{QBF} \leq^P_m \mbox{QBF-Truth}_{NNF}$ can be easily done by the verifier 
+  \item $\mbox{QBF} \leq^P_m \mbox{QBF'}$ can be easily done by the verifier 
   \item it suffices to show QBF' $\in$ IP because we can reduce any problem in PSPACE to QBF in polynomial time \newline \newline
   How do we find an algorithm for QBF' s.t it satisfies the IP conditions?
 
@@ -128,7 +128,7 @@
 \begin{frame}
   \frametitle{Arithmetization}
   \begin{itemize}
-    \item $\phi = x$. If $\phi$ is true then $\phi_{arith} = 1$ and if $\phi $ is true then $\phi_{arith} = 0$
+    \item $\phi = x$. If $\phi$ is true then $\phi_{arith} = 1$ and if $\phi $ is false then $\phi_{arith} = 0$
     \item $\phi = \neg x$ is the same but turned around \pause
     \item Suppose $\phi_1$ and $\phi_2$ are true, that means $\phi_{1arith} > 0$ and $\phi_{2arith} > 0$ \newline(it's similar for the other case)\pause
     \item $\phi_1 \land \phi_2$, $\phi_1 \lor \phi_2$ also holds
@@ -160,7 +160,7 @@
     \item Pick a value $k \geq 2^n$ with two conditions : 
     \item k must be presentable in linear many bits \pause
     \item the calculation mod k must preserve ">0" for valid and "=0" for invalid formulas
-    \item Number Theory Theorem : for any $a \leq 2^{2^{n}}, a>0$, there exist a prime number $k \in [2^n, 2^{3n}]$ s.t $a \not\equiv 0 $ (mod k)
+    \item It holds that: for any $a \leq 2^{2^{n}}, a>0$, there exist a prime number $k \in [2^n, 2^{3n}]$ s.t $a \not\equiv 0 $ (mod k)
   \end{itemize}
 \end{frame}
 
@@ -193,17 +193,17 @@
 \begin{frame}
   \frametitle{Example}
   $\phi = \forall x \exists y (\neg x \lor y) \land \exists z \exists w \, (z \lor w) $ \newline \newline
-  $\phi_{arith} = \underbrace{(\prod_{x}^{} \prod_{y}^{} (1-x) + y )}_{\phi_{1arith}} * \underbrace{(\sum_{z}^{} \sum_{w}^{} z + w)}_{\phi_{2arith}}$ \, \,   $x,y,z,w \in \{0,1\}$ \pause
+  $\phi_{arith} = \underbrace{(\prod_{x}^{} \sum_{y}^{} (1-x) + y )}_{\phi_{1arith}} * \underbrace{(\sum_{z}^{} \sum_{w}^{} z + w)}_{\phi_{2arith}}$ \, \,   $x,y,z,w \in \{0,1\}$ \pause
   \newline
   %\hspace*{1.3cm} Prover \hspace{6.8cm} Verifier \newline \newline
   \hspace*{0cm}
   \begin{tikzpicture}
     \node at (-2,0.5) {Prover};
     \node at (8,0.5) {Verifier};
-  \draw[->] (0,0) -- (6,0) node[midway, above] {c=8,k=11,b};
+  \draw[->] (0,0) -- (6,0) node[midway, above] {c=12,k=11,b};
   \node[text width=5cm, align=left] at (9,0) {check c>0, 8, b}; \pause
   \draw[<-] (0,-1) -- (6,-1) node[midway, above] {asks for $a_1 = \phi_1 \mbox{ and } a_2 = \phi_2$};
-  \draw[->] (0,-2) -- (6,-2) node[midway, above] {sends $a_1 = 2$, $a_2 = 4$};
+  \draw[->] (0,-2) -- (6,-2) node[midway, above] {sends $a_1 = 3$, $a_2 = 4$};
   \node[text width=5cm, align=left] at (9,-2) {check $c = a_1 * a_2$};
   \draw[<-] (0,-3) -- (6,-3) node[midway, above] {prove $a_1 = \phi_1, a_2 =\phi_2$}; \pause
     \draw[<-] (0,-3) -- (6,-3) node[midway, below] {send me $p_1(x)$ for $\phi_1$ and $p_2(x)$ for $\phi_2$};
@@ -219,23 +219,23 @@
     \node at (8,0.5) {Verifier};
     \node[text width=1.5cm, align=left] at (-2,-0.5) {\small calculate $\phi_{1arith}(x)$, $\phi_{2arith}(z)$}; 
     \draw[->] (0,-0.5) -- (6,-0.5) node[midway, above] {\small sends $p_1(x) = \phi_{1arith}(x)$, $\phi_{2arith}(z)$};
-    \draw[->] (0,-0.5) -- (6,-0.5) node[midway, below] {\small $p_1(x) = \prod_{y}^{}(1-x)+y = x^2-3x+2$};
+    \draw[->] (0,-0.5) -- (6,-0.5) node[midway, below] {\small $p_1(x) = \sum_{y}^{}(1-x)+y = -2x+3$};
     \node[text width=3.5cm, align=left] at (8,-0.5) {\scriptsize check $a_1=p_1(0)*p_1(1)$};
     \node[text width=3.5cm, align=left] at (8,-0.9) {\scriptsize check $a_2=p_2(0)+p_2(1)$}; \pause 
 
-    \node[text width=3.5cm, align=left] at (8,-2.5) {\scriptsize Choose randomly $d,g \in GF(k)$,say d=2,g=3};
-    \draw[<-] (0,-2.5) -- (6,-2.5) node[midway, above] {\small sends $p_1(d) = 0, p_2(g) = 7$};
-    \draw[<-] (0,-2.5) -- (6,-2.5) node[midway, below] {\small ask for $p'_1(d,y), p'_2(g,w) $}; \pause
+    \node[text width=3.5cm, align=left] at (8,-2.5) {\scriptsize Choose randomly $d \in GF(k)$,say d=2};
+    \draw[<-] (0,-2.5) -- (6,-2.5) node[midway, above] {\small sends $p_1(d) = 10, p_2(d) = 5$};
+    \draw[<-] (0,-2.5) -- (6,-2.5) node[midway, below] {\small ask for $p'_1(d,y), p'_2(d,w) $}; \pause
     \draw[->] (0,-4.5) -- (6,-4.5) node[midway, above] {\small sends $p'_1(d,y) = \phi_{1arith}(d,y)$};
-    \draw[->] (0,-4.5) -- (6,-4.5) node[midway, below] {\small sends $p'_2(g,w) = \phi_{2arith}(g,w)$};
+    \draw[->] (0,-4.5) -- (6,-4.5) node[midway, below] {\small sends $p'_2(d,w) = \phi_{2arith}(d,w)$};
     \node[text width=3.5cm, align=left] at (8,-4.5) {\scriptsize $p'_1(d,0)*p'_1(d,1)=p_1(d)$};  
-    \node[text width=3.5cm, align=left] at (8,-4.9) {\scriptsize $p'_2(g,0)*p'_2(g,1)=p_2(g)$}; 
-    \node[text width=3.5cm, align=left] at (8,-5.3) {\scriptsize Choose c,k $\in$ GF(k)}; \pause
+    \node[text width=3.5cm, align=left] at (8,-4.9) {\scriptsize $p'_2(d,0)*p'_2(d,1)=p_2(d)$}; 
+    \node[text width=3.5cm, align=left] at (8,-5.3) {\scriptsize Choose c $\in$ GF(k)};
   \end{tikzpicture} 
   \pause
     \only<5->{ % Replace 5 with the slide number where it should appear
     \vspace{0.5cm}
-    \text{The verifier check $\phi_{arith}(d,c,g,k) = p'_1(d,c) * p'_2(g,k)$. It accepts.}
+    \text{The verifier check $\phi_{arith}(d,c,d,c) = p'_1(d,c) * p'_2(d,c)$. It accepts.}
   }
 \end{frame}
 
@@ -259,7 +259,7 @@
     \draw[->] (0,-4.5) -- (6,-4.5) node[midway, above] {\small sends $p'_1(d,y) = 7*y$};
     \node[text width=3.5cm, align=left] at (8,-4.5) {\scriptsize check $p'_1(d,0) + p'_1(d,1) = p_1(d)$. Chooses g = 4};
   \end{tikzpicture}
-  \only<5->{ % Replace 5 with the slide number where it should appear
+  \only<6->{ % Replace 5 with the slide number where it should appear
     \vspace{0.5cm}
     \text{The verifier check $\phi_{arith}(d,g) = p'_1(d,g)$. $12\neq 28$. Verfier rejects.}
   } 
