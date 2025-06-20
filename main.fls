@@ -1541,6 +1541,9 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/ascender/opensans/OpenSans-Regular-
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ascender/opensans/OpenSans-Regular-T1-TLF--base.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/ascender/opensans/OpenSans-Regular-TS1-TLF.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/ascender/opensans/OpenSans-Regular-TS1-TLF--base.tfm
+INPUT ./TU_Logo_SW.pdf
+INPUT TU_Logo_SW.pdf
+INPUT ./TU_Logo_SW.pdf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmss12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm

@@ -47,6 +47,20 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{What is IP?}
+  \begin{itemize}
+    \item A prover tries to convince the Verifier of membership
+    \item Verifier scpetically checks the Prover's arguemnts before making a decision
+    \item The interaction might involve several rounds of communication
+    \item The prover might have unlimited power but the verifier operate in p
+    \item A language L is in IP if there is a polynomial verifier V such that, for every word w : 
+    $$\mbox{if w } \in \mbox{L then there is a Prover P with }Pr[V \leftrightarrow P accepts] \geq \frac{2}{3}$$
+    $$\mbox{if w } \notin \mbox{L then for all  Prover P with }Pr[V \leftrightarrow P accepts] \leq \frac{1}{3}$$
+    
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
   \frametitle{PSPACE $\subseteq$ IP}
   For this inclusion, we use a well known PSPACE-complete problem, namely True-QBF
   \pause
