@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.6.5)  20 JUN 2025 00:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2025.6.5)  20 JUN 2025 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -653,12 +653,12 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )) (./beamerinnerthemetud.sty
 Package: beamerinnerthemetud 2011/01/17 v1 TU Dresden corporate design inner theme
 ))
-LaTeX Font Info:    Trying to load font information for T1+opensans-TLF on input line 28.
+LaTeX Font Info:    Trying to load font information for T1+opensans-TLF on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/opensans/T1opensans-TLF.fd
 File: T1opensans-TLF.fd 2019/06/24 Font definitions for T1/opensans-TLF.
 )
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 28.
+(Font)              scaled to size 9.49997pt on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count343
@@ -666,24 +666,24 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
-LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -738,7 +738,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 28.
+Package hyperref Info: Link coloring OFF on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -748,66 +748,66 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count350
 )
-LaTeX Info: Redefining \ref on input line 28.
-LaTeX Info: Redefining \pageref on input line 28.
-LaTeX Info: Redefining \nameref on input line 28.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 28.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 29.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 28.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 28.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 28.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 28.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 28.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 28.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 28.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 28.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 28.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 28.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 28.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 28.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 28.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 28.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 28.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 28.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 28.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 29.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 28.
+(Font)              `pureletters' in the math version `normal' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 28.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 29.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 28.
+(Font)              `pureletters' in the math version `bold' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 28.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 28.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -825,30 +825,30 @@ Dictionary: translator-theorem-dictionary, Language: English
 \c@mv@boldtabular=\count352
  (./main.nav)
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 28.
+(Font)              scaled to size 4.74998pt on input line 29.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 4.3262pt on input line 28.
+(Font)              scaled to size 4.3262pt on input line 29.
 <TU_Logo_SW.pdf, id=13, 204.84209pt x 59.37624pt>
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 28.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 29.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
-Underfull \vbox (badness 10000) detected at line 28
+Underfull \vbox (badness 10000) detected at line 29
  []
 
 
 LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4.55392> not available
-(Font)              size <5> substituted on input line 28.
+(Font)              size <5> substituted on input line 29.
 
-LaTeX Font Info:    Trying to load font information for TS1+opensans-TLF on input line 28.
+LaTeX Font Info:    Trying to load font information for TS1+opensans-TLF on input line 29.
 (/usr/share/texlive/texmf-dist/tex/latex/opensans/TS1opensans-TLF.fd
 File: TS1opensans-TLF.fd 2019/06/24 Font definitions for TS1/opensans-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/opensans-TLF/m/n' will be
-(Font)              scaled to size 4.3262pt on input line 28.
+(Font)              scaled to size 4.3262pt on input line 29.
 
-Overfull \hbox (26.98631pt too wide) in paragraph at lines 28--28
+Overfull \hbox (26.98631pt too wide) in paragraph at lines 29--29
  []|[]| 
  []
 
@@ -885,26 +885,26 @@ Overfull \hbox (26.98631pt too wide) in paragraph at lines 28--28
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 5.8521pt on input line 34.
+(Font)              scaled to size 5.8521pt on input line 35.
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 34.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 35.
 (pdftex.def)             Requested size: 60.77884pt x 17.6173pt.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 7.68929pt on input line 34.
+(Font)              scaled to size 7.68929pt on input line 35.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 15.3786pt on input line 34.
+(Font)              scaled to size 15.3786pt on input line 35.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/b/n' will be
-(Font)              scaled to size 15.3786pt on input line 34.
+(Font)              scaled to size 15.3786pt on input line 35.
 
 LaTeX Font Warning: Font shape `T1/cmss/bx/n' in size <16.18806> not available
-(Font)              size <17.28> substituted on input line 34.
+(Font)              size <17.28> substituted on input line 35.
 
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 3.79999pt on input line 34.
+(Font)              scaled to size 3.79999pt on input line 35.
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 34.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 35.
 (pdftex.def)             Requested size: 60.77884pt x 17.6173pt.
 [1
 
@@ -945,38 +945,38 @@ Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 34.
 
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 34.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 35.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
-Underfull \vbox (badness 10000) detected at line 34
+Underfull \vbox (badness 10000) detected at line 35
  []
 
 LaTeX Font Info:    Font shape `TS1/opensans-TLF/m/n' will be
-(Font)              scaled to size 9.49997pt on input line 53.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 53.
+(Font)              scaled to size 9.49997pt on input line 47.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 47.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 53.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 53.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 47.
  (/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
 LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 53.
+(Font)              scaled to size 13.67995pt on input line 47.
 LaTeX Font Info:    Font shape `T1/opensans-TLF/sb/n' will be
-(Font)              scaled to size 13.67995pt on input line 53.
+(Font)              scaled to size 13.67995pt on input line 47.
 
 
 LaTeX Font Warning: Font shape `T1/cmss/sb/n' undefined
-(Font)              using `T1/cmss/m/n' instead on input line 53.
+(Font)              using `T1/cmss/m/n' instead on input line 47.
 
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 53.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 47.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -988,7 +988,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 53.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 66.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -998,7 +998,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 53.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 66.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1008,7 +1008,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 53.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 66.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1018,7 +1018,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 53.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 66.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1028,7 +1028,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 76.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 66.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1038,7 +1038,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 76.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 89.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1048,7 +1048,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 76.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 89.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1058,7 +1058,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 76.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 89.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1068,7 +1068,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 99.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 89.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1078,7 +1078,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 99.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 112.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1088,7 +1088,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 99.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 112.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1098,7 +1098,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 99.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 112.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1108,7 +1108,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 99.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 112.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1118,7 +1118,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 99.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 112.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1128,7 +1128,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 99.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 112.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1138,7 +1138,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 99.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 112.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1148,7 +1148,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 110.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 112.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1158,7 +1158,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 110.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 123.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1168,7 +1168,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 110.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 123.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1178,7 +1178,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 128.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 123.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1188,7 +1188,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 128.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 141.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1198,7 +1198,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 128.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 141.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1208,7 +1208,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 128.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 141.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1218,7 +1218,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 128.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 141.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1228,7 +1228,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 128.
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 141.
 (pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1238,4 +1238,464 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 ]
 File: TU_Logo_SW.pdf Graphic file (type pdf)
 <use TU_Logo_SW.pdf>
-Package pdftex.def I
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 141.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [28
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 151.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [29
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 151.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [30
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 169.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [31
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 169.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [32
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 169.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [33
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 169.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 176.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35
+
+]
+Overfull \hbox (71.67674pt too wide) in paragraph at lines 198--198
+| []  
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 198.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36
+
+]
+Overfull \hbox (71.67674pt too wide) in paragraph at lines 198--198
+| []  
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 198.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37
+
+]
+Overfull \hbox (71.67674pt too wide) in paragraph at lines 198--198
+| []  
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 198.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38
+
+]
+Overfull \hbox (71.67674pt too wide) in paragraph at lines 198--198
+| []  
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 198.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39
+
+]
+LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
+(Font)              scaled to size 8.54997pt on input line 226.
+LaTeX Font Info:    Font shape `T1/opensans-TLF/m/n' will be
+(Font)              scaled to size 6.64998pt on input line 226.
+
+Overfull \hbox (30.21806pt too wide) in paragraph at lines 226--226
+[]|  [][][] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 226.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40
+
+]
+Overfull \hbox (30.21806pt too wide) in paragraph at lines 226--226
+[]|  [][][] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 226.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41
+
+]
+Overfull \hbox (30.21806pt too wide) in paragraph at lines 226--226
+[]|  [][][] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 226.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42
+
+]
+Overfull \hbox (30.21806pt too wide) in paragraph at lines 226--226
+[]|  [][][][] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 226.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43
+
+]
+Overfull \hbox (30.21806pt too wide) in paragraph at lines 226--226
+[]|  [][][][][] 
+ []
+
+
+Overfull \vbox (6.00266pt too high) detected at line 226
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 226.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [44
+
+]
+Overfull \hbox (70.03136pt too wide) in paragraph at lines 253--253
+[] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 253.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45
+
+]
+Overfull \hbox (70.03136pt too wide) in paragraph at lines 253--253
+[] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 253.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [46
+
+]
+Overfull \hbox (70.03136pt too wide) in paragraph at lines 253--253
+[] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 253.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47
+
+]
+Overfull \hbox (70.03136pt too wide) in paragraph at lines 253--253
+[] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 253.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48
+
+]
+Overfull \hbox (70.03136pt too wide) in paragraph at lines 253--253
+[] 
+ []
+
+
+Overfull \vbox (9.01765pt too high) detected at line 253
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 253.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [49
+
+]
+Overfull \hbox (70.03136pt too wide) in paragraph at lines 253--253
+[] 
+ []
+
+
+Overfull \vbox (9.01765pt too high) detected at line 253
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 253.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [50
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 267.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 267.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 267.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 267.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [54
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 287.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [55
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 287.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [56
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 287.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [57
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 287.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [58
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 287.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [59
+
+]
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 298.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [60
+
+]
+<Copy.png, id=418, 1766.6pt x 709.65125pt>
+File: Copy.png Graphic file (type png)
+<use Copy.png>
+Package pdftex.def Info: Copy.png  used on input line 306.
+(pdftex.def)             Requested size: 441.64893pt x 177.41237pt.
+
+Overfull \hbox (106.5843pt too wide) in paragraph at lines 306--306
+ [] 
+ []
+
+File: TU_Logo_SW.pdf Graphic file (type pdf)
+<use TU_Logo_SW.pdf>
+Package pdftex.def Info: TU_Logo_SW.pdf  used on input line 306.
+(pdftex.def)             Requested size: 44.93251pt x 13.02383pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [61
+
+ <./Copy.png>]
+\tf@nav=\write6
+\openout6 = `main.nav'.
+
+\tf@toc=\write7
+\openout7 = `main.toc'.
+
+\tf@snm=\write8
+\openout8 = `main.snm'.
+
+ (./main.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.09193pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+ ) 
+Here is how much of TeX's memory you used:
+ 27943 strings out of 480247
+ 561558 string characters out of 5896152
+ 835286 words of memory out of 5000000
+ 45147 multiletter control sequences out of 15000+600000
+ 492877 words of font info for 91 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 128i,17n,122p,457b,857s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_jg4h6q.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_nvvucy.enc}</usr/share/texlive/texmf-dist/fonts/type1/ascender/opensans/OpenSans-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0500.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0600.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0800.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb>
+Output written on main.pdf (61 pages, 397961 bytes).
+PDF statistics:
+ 566 PDF objects out of 1000 (max. 8388607)
+ 435 compressed objects within 5 object streams
+ 123 named destinations out of 1000 (max. 500000)
+ 59 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,8 +1,8 @@
 # Fdb version 3
-["pdflatex"] 1750373107 "/home/maik/studiumtud/IP = PSPACE/IP-PSPACE/main.tex" "main.pdf" "main" 1750373113
+["pdflatex"] 1750427246 "/home/maik/studiumtud/IP = PSPACE/IP-PSPACE/main.tex" "main.pdf" "main" 1750427253
   "/etc/texmf/web2c/texmf.cnf" 1749038783 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/maik/.texlive2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1749077117 1405644 8beec9f80219283946f97b1e8cc91499 ""
-  "/home/maik/studiumtud/IP = PSPACE/IP-PSPACE/main.tex" 1750373107 14845 62224996a4c07139f1e02c0163435a8d ""
+  "/home/maik/studiumtud/IP = PSPACE/IP-PSPACE/main.tex" 1750427246 15340 150ff16c19e9563818987b1a248792e1 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_jg4h6q.enc" 1561498186 2952 84fda6c8ae8be17712e9d998ffe48bad ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/opensans/a_nvvucy.enc" 1561498186 3364 7c78cdd102714be824555fc722b51d02 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -262,16 +262,17 @@
   "/usr/share/texmf/fonts/type1/public/cm-super/sfsx1728.pfb" 1749038802 144018 fc22fd96cf4e9932a91e711da3e120b8 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1750194027 4379155 98693266ff65f58d9f98aff394de12d2 ""
+  "Copy.png" 1750424941 38028 e64b4a773f3005f4c3ac05a2fe0840d3 ""
   "TU_Logo_SW.pdf" 1750194391 4227 378bbc37fccceaa2e7944b8f82b603ee ""
   "beamercolorthemetud.sty" 1750194391 6351 66ec1ce325466f21f3f75691d4fa9851 ""
   "beamerfontthemetud.sty" 1750194391 8600 9485d3b4d385cce2853098f52a5a9787 ""
   "beamerinnerthemetud.sty" 1750194391 4448 66506ca9e84d2267c2c1516249980227 ""
   "beamerouterthemetud.sty" 1750194391 37950 d82764ed078516a7a8315e1a0c0edade ""
   "beamerthemetud.sty" 1750194391 2158 c844ac62e5248760ee1d6ecb0cb73e2d ""
-  "main.aux" 1750373113 3297 79fab73c1dc99038d98ecd5ce98dd0fc "pdflatex"
-  "main.nav" 1750373113 1654 830c16fdb8e02578a5a1f5c29f5e233c "pdflatex"
-  "main.out" 1750373109 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1750373107 14845 62224996a4c07139f1e02c0163435a8d ""
+  "main.aux" 1750427253 3551 a2abcefcaf7f7faff4fba4c7fac2d758 "pdflatex"
+  "main.nav" 1750427253 1836 dfe4366e6adfeb49983d75427eed398c "pdflatex"
+  "main.out" 1750427248 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1750427246 15340 150ff16c19e9563818987b1a248792e1 ""
   "tudbeamermacros.sty" 1750194391 7460 5a5d25673d83787cf1448812a26f407b ""
   "tudcolors.sty" 1750194391 12159 91de430e31ccf1790af39e6a29946415 ""
   (generated)

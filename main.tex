@@ -4,6 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[default,scale=.95]{opensans}
 \usepackage{tikz}
+\usepackage{graphicx}
 
 
 
@@ -32,6 +33,18 @@
 %\setbeamertemplate{tud background}[image/shaded]{background.jpg}{0.5}
 \addtocounter{framenumber}{-1}
 \maketitle
+\begin{frame}
+  \frametitle{Content}
+  \begin{itemize}
+    \item What is IP?
+    \item Short idea for $PSPACE \in IP$
+    \item Arithmetization
+    \item Introducing the protocol 
+    \item Problems within the protocol and solutions
+    \item Some protocol examples
+    \item Correctness
+  \end{itemize}
+\end{frame}
 
 \begin{frame}
   \frametitle{PSPACE $\subseteq$ IP}
@@ -281,7 +294,14 @@
     $$Pr[Error] = 1 - Pr[\mbox{No Error}] = 1- \prod_{i=1}^{m} Pr[\mbox{No Error in i-th round}]$$
     $$ \leq (1-(1-\frac{2n}{2^n}))^n$$ \newline
     \item  The last approximation is true because : $\prod_{i=1}^{m} Pr[\mbox{no error in i-th round}] \geq (1-\frac{2n}{2^n})^m \geq (1- \frac{2n}{2^n})^n$
-    \item 
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[scale= 0.25]{Copy.png}
+    \caption{$n \rightarrow \infty$}
+  \end{figure}
 \end{frame}
 \end{document}
